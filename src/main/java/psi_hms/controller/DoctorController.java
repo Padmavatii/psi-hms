@@ -1,4 +1,4 @@
-package psi_hms.Controller;
+package psi_hms.controller;
 
 public class DoctorController {
 }
