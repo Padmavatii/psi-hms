@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-public interface DoctorInterface {
+public interface DoctorService {
 
     /**
      * Adds a new doctor along with specialization details using a POST API.

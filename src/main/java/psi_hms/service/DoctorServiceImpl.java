@@ -16,7 +16,7 @@ import psi_hms.common.NotFoundException;
 import psi_hms.dto.DoctorDTO;
 import psi_hms.entity.Doctor;
 import psi_hms.entity.Specialization;
-import psi_hms.interfaces.DoctorInterface;
+import psi_hms.interfaces.DoctorService;
 import psi_hms.repository.DoctorRepository;
 import psi_hms.repository.SpecializationRepository;
 
@@ -26,7 +26,7 @@ import java.util.Locale;
 import java.util.Optional;
 
 @Service
-public class DoctorServiceImpl implements DoctorInterface {
+public class DoctorServiceImpl implements DoctorService {
 
     Logger logger = LoggerFactory.getLogger(DoctorServiceImpl.class);
 

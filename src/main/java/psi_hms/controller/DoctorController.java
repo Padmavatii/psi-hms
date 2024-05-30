@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import psi_hms.common.GenericResponse;
 import psi_hms.dto.DoctorDTO;
 import psi_hms.entity.Doctor;
-import psi_hms.interfaces.DoctorInterface;
+import psi_hms.interfaces.DoctorService;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.Optional;
 public class DoctorController {
 
     @Autowired
-    private DoctorInterface doctorService;
+    private DoctorService doctorService;
 
 
     @PostMapping("/doctor")
