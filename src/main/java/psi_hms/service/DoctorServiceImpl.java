@@ -109,7 +109,6 @@ public class DoctorServiceImpl implements DoctorService {
     @Transactional
     @Override
     public GenericResponse updateDoctor(Long id, DoctorDTO doctorDTO){
-
         logger.info("API call to update a doctor{}", doctorDTO);
         Doctor existingDoctor = doctorRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException(messageSource.getMessage(DOCTOR_NOT_FOUND, null, Locale.ENGLISH)));

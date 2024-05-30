@@ -18,9 +18,12 @@ import java.util.Optional;
 @RequestMapping("/hms")
 public class DoctorController {
 
-    @Autowired
     private DoctorService doctorService;
 
+    @Autowired
+    public DoctorController(DoctorService doctorService) {
+        this.doctorService = doctorService;
+    }
 
     @PostMapping("/doctor")
     public GenericResponse submitDoctor(@RequestBody @Valid DoctorDTO doctorDTO) {

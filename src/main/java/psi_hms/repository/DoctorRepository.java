@@ -8,7 +8,6 @@ import org.springframework.data.repository.query.Param;
 import psi_hms.entity.Doctor;
 
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Optional;
 
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
