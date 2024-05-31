@@ -152,6 +152,7 @@ public class DoctorServiceImpl implements DoctorService {
         logger.info("API call to get a list of doctors by id {}", doctorId);
         Optional<Doctor> doctor = doctorRepository.findById(doctorId);
         if(doctor.isEmpty()) {
+            logger.error("Invalid Id Passed{}", doctorId);
             throw new NotFoundException(messageSource.getMessage(DOCTOR_NOT_FOUND, null, Locale.ENGLISH));
         }
         return doctor;
