@@ -35,6 +35,7 @@ public class Doctor {
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE,
             CascadeType.DETACH, CascadeType.REFRESH})
+
     @JoinColumn(name = "specializationId", referencedColumnName = "specialization_id")
     private Specialization specialization;
 }
