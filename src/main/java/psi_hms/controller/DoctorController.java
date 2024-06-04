@@ -18,7 +18,7 @@ import java.util.Optional;
 @RequestMapping("/hms")
 public class DoctorController {
 
-    private DoctorService doctorService;
+    private final DoctorService doctorService;
 
     @Autowired
     public DoctorController(DoctorService doctorService) {
